@@ -1,0 +1,4 @@
+class TextsController < ApplicationController
+
+  
+end

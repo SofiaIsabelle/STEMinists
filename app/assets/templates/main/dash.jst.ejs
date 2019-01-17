@@ -1,0 +1,37 @@
+<maincontent>
+    <%= JST['main/quick']() %>
+</maincontent>
+
+<sidebar>
+  <mainitems>
+    <ul>
+      <li>
+        <username>
+          <p  class='font-26 marg-0'>
+            <%= Tumblr.user.get('username') %>
+          </p>
+
+          <input type='text' class='hide hidden' value=" <%= Tumblr.user.get('username') %>">
+          <a class='font-8' href='#blog/<%= Tumblr.user.get("username") %>'>
+            www.tumbler-clone/<%= Tumblr.user.get('username') %>
+          </a>
+        </username>
+      </li>
+      <li class='baritem' data-action='followers'>
+        <i class='fa fa-user'></i>
+        Followers
+      </li>
+      <li class='baritem' data-action='activity'>
+        <i class='fa fa-flash'></i>
+        Activity
+      </li>
+      <li class='baritem' data-action='members'>
+        <i class='fa fa-eye'></i>
+        Members
+      </li>
+    </ul>
+    <h3 class='under-line'>Followed Blogs</h3>
+    <div class='followed-links'>
+    </div>
+  </mainitems>
+</sidebar>

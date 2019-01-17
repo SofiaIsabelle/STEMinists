@@ -1,0 +1,38 @@
+<nav class="group">
+  <navLeft>
+    <span>
+      tumblr-clone.
+    </span>
+  </navLeft>
+
+  <navRight>
+    <topitem class='active' data-action='dash'>
+      <i class='fa fa-home'></i>
+    </topitem>
+    <topitem data-action='help'>
+      <i class='fa fa-question-circle'></i>
+    </topitem>
+    <topitem data-action='settings'>
+      <i class='fa fa-cog'></i>
+    </topitem>
+    <topitem data-action='logout'>
+      <i class='fa fa-power-off'></i>
+    </topitem>
+  </navRight>
+</nav>
+
+<mainwrapper class="group">
+
+  <dashview class='top-view'>
+    <%= JST['main/dash']() %>
+  </dashview>
+
+  <helpview class='top-view'>
+    <%= JST['top/help']() %>
+  </helpview>
+
+  <accountview class='top-view'>
+    <%= JST['top/settings']() %>
+  </accountview>
+
+</mainwrapper>
