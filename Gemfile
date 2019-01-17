@@ -42,3 +42,4 @@ gem 'figaro'
 
 gem "paperclip"
 gem "aws-sdk"
+
